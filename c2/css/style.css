@@ -1,0 +1,393 @@
+.box { 
+	text-align: center; 
+	background-color: #eeeeee; 
+}
+
+
+.chess-board { 
+	border-spacing: 0; 
+	border-collapse: collapse; 
+}
+
+
+
+.chess-board td { 
+	border: 1px solid; 
+	width: 60px; 
+	height: 60px; 
+	text-align: center; 
+	vertical-align: middle; 
+}
+
+.white{
+	background-color: rgb(187, 180, 180);
+}
+
+.black{
+	background-color: rgb(155, 114, 3);
+}
+/* --------------------------King---------------------------------------- */
+.king{
+	width: 40px; 
+	height: 15px;
+	background: black;
+	border-radius: 100px/50px;
+	position: relative;
+	top: 20px;
+	left: 10px;
+}
+
+.king::before{
+	content: '';
+	width: 10; 
+	height: 5;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 30px solid black;
+	border-radius: 100px/50px;
+	position: relative;
+	top: 2px;
+	left: 5px;
+}
+
+.king::after{
+	content: '✚';
+	position: relative;
+	top: -40px;
+	left: -17px;
+	width: 20px;
+	height: 15px;
+}
+
+.white-king{
+	width: 40px; 
+	height: 15px;
+	background: white;
+	border-radius: 100px/50px;
+	position: relative;
+	top: 20px;
+	left: 10px;
+}
+
+.white-king::before{
+	content: '';
+	width: 10; 
+	height: 5;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 30px solid white;
+	border-radius: 100px/50px;
+	position: relative;
+	top: 2px;
+	left: 5px;
+}
+
+.white-king::after{
+	content: '✚';
+	color: white;
+	position: relative;
+	top: -40px;
+	left: -17px;
+	width: 20px;
+	height: 15px;
+}
+/* --------------------------Quenn---------------------------------------- */
+
+.queen{
+	width: 40px; 
+	height: 15px;
+	background: black;
+	border-radius: 100px/50px;
+	position: relative;
+	top: 20px;
+	left: 10px;
+}
+
+.queen::before{
+	content: ' ';
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 30px solid black;
+	position: relative;
+	top: -60px;
+	left: 5px;
+	border-radius: 15px;
+}
+
+.queen::after{
+	content: '♛';
+	position: relative;
+	top: -50px;
+	left: -25px;
+	font-size: 30px;
+}
+
+.white-queen{
+	width: 40px; 
+	height: 15px;
+	background: white;
+	border-radius: 100px/50px;
+	position: relative;
+	top: 20px;
+	left: 10px;
+}
+
+.white-queen::before{
+	content: ' ';
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 30px solid white;
+	position: relative;
+	top: -60px;
+	left: 5px;
+	border-radius: 15px;
+}
+
+.white-queen::after{
+	content: '♕';
+	color: white;
+	position: relative;
+	top: -50px;
+	left: -25px;
+	font-size: 30px;
+}
+/* --------------------------Pawn---------------------------------------- */
+.pawn{
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 30px solid black;
+	position: relative;
+	border-radius: 25px;
+	top: 15px;
+	left: 10px;
+}
+
+.pawn::before{
+	content: '';
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 30px solid black;
+	border-radius: 25px;
+	position: relative;
+	top: 20px;
+	left: -15px;
+}
+
+.pawn::after{
+	content: '⚫';
+	position: relative;
+	top: -25px;
+	left: -41px;	
+}
+
+
+.white-pawn{
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 30px solid white;
+	position: relative;
+	border-radius: 25px;
+	top: 15px;
+	left: 10px;
+}
+
+.white-pawn::before{
+	content: '';
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 30px solid white;
+	border-radius: 25px;
+	position: relative;
+	top: 20px;
+	left: -15px;
+}
+
+.white-pawn::after{
+	content: '⚪';
+	position: relative;
+	top: -25px;
+	left: -41px;	
+}
+/* --------------------------Steed---------------------------------------- */
+.steed{
+	width: 40px; 
+	height: 15px;
+	background: black;
+	border-radius: 100px/50px;
+	position: relative;
+	top: 20px;
+	left: 10px;
+}
+
+.steed::before{
+	content: '♞';
+	font-size: 60px;
+	position: relative;
+	top: -55px;
+	left: -13px;
+}
+
+.white-steed{
+	width: 40px; 
+	height: 15px;
+	background: white;
+	border-radius: 100px/50px;
+	position: relative;
+	top: 20px;
+	left: 10px;
+}
+
+.white-steed::before{
+	content: '♘';
+	color: white;
+	font-size: 60px;
+	position: relative;
+	top: -55px;
+	left: -13px;
+}
+
+/* --------------------------Rook---------------------------------------- */
+.rook{
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 30px solid black;
+	position: relative;
+	border-radius: 50px;
+	top: 15px;
+	left: 10px;
+}
+
+.rook::before{
+	content: ' ';
+	content: '';
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 25px solid black;
+	border-radius: 25px;
+	position: relative;
+	top: 20px;
+	left: -15px;
+}
+
+.rook::after{
+	content: 'Ш';
+	position: relative;
+	font-size: 20px;
+	top: -16px;
+	left: -40px;
+}
+
+.white-rook{
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 30px solid white;
+	position: relative;
+	border-radius: 50px;
+	top: 15px;
+	left: 10px;
+}
+
+.white-rook::before{
+	content: ' ';
+	content: '';
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 25px solid white;
+	border-radius: 25px;
+	position: relative;
+	top: 20px;
+	left: -15px;
+}
+
+.white-rook::after{
+	content: 'Ш';
+	color: white;
+	position: relative;
+	font-size: 20px;
+	top: -16px;
+	left: -40px;
+}
+/* --------------------------Bp---------------------------------------- */
+.bp{
+	width: 40px; 
+	height: 15px;
+	background: black;
+	border-radius: 100px/50px;
+	position: relative;
+	top: 20px;
+	left: 10px;
+}
+
+.bp::before{
+	content: ' ';
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 30px solid black;
+	position: relative;
+	top: -60px;
+	left: 5px;
+	border-radius: 15px;
+}
+
+.bp::after{
+	content: '♝';
+	font-size: 30px;
+	position: relative;
+	top: -47px;
+	left: -25px;
+	
+}
+
+.white-bp{
+	width: 40px; 
+	height: 15px;
+	background: white;
+	border-radius: 100px/50px;
+	position: relative;
+	top: 20px;
+	left: 10px;
+}
+
+.white-bp::before{
+	content: ' ';
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 30px solid white;
+	position: relative;
+	top: -60px;
+	left: 5px;
+	border-radius: 15px;
+}
+
+.white-bp::after{
+	content: '♗';
+	font-size: 30px;
+	position: relative;
+	top: -47px;
+	left: -25px;
+	color: white;
+}
