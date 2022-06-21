@@ -14,7 +14,6 @@ function score(){
     };
 
     result = eval(arr.first + arr.act + arr.second);
-    document.getElementById("output").innerHTML = result;
+    document.getElementById('output').innerHTML = result;
     
 }
-
