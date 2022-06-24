@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// Счастливый билет
+var value = prompt('Введите шестизначный номер билета');
+
+var sum1 = Number(value[0]) + Number(value[1]) + Number(value[2]);
+var sum2 = Number(value[3]) + Number(value[4]) + Number(value[5]);
+
+if(sum1 == sum2){
+  alert('У Вас счастливый билет!')
+}else{
+  alert('У Вас несчастливый билет!')
+}
+// --------------------------------------------------------------------
+// Температурный помощник
+var degree = Number(prompt('Введите градусы в цельсиях:'));
+var fahrenheit = (degree*1.8)+32;
+
+ if (degree * 1 == degree) {
+     alert(fahrenheit + ' Фаренгейтa') 
+ } else {
+     alert('Неверный формат!')
+ }
+    </script>
+</body>
+</html>
