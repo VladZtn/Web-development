@@ -1,3 +1,9 @@
+//2
+// Соревнования по бегу
+// Создайте функцию, которая принимает массив из 6 объектов, 
+// в каждом есть фамилия бегуна и результаты трех его забегов в секундах. 
+// Вернуть объект с полями:
+
 function name(){
     let NamesOfMale = ['Oliver','Jack','Harry','Richard','Charles','Joseph','Daniel','Paul','Timothy','Jose','Larry','Jeffrey','Frank','Eric','Stephen','Joshua','Raymond','Ryan'];
     let randomMale = Math.floor(Math.random()*NamesOfMale.length);
@@ -71,52 +77,54 @@ name()
 RandomTime()
 Runners()
 
+//3
+// Пользователе-генератор.
+// Напишите функцию, которая принимает пол пользователя и возвращает объект данных о пользователе сгенерированных случайно. 
+// Имена выбирайте из заранее созданных массивов разных имен размером не меньше 50 элементов для каждого пола.
 
+let gender = prompt('Enter your gender (Male  or Female)');
 
+let NamesOfMale = [
+  'Oliver','Jack','Harry','Jacob','Charley',
+  'Thomas','George','Oscar','James','William',
+  'Noah','Liam','Mason','Jacob','William',
+  'Ethan','Michael','Alexander','James','Daniel ',
+  'Abraham','Adam','John','Robert','David',
+  'Richard','Charles','Joseph','Daniel','Paul',
+  'Mark','Donald','Kenneth','Steven','Edward	',
+  'Brian','Ronald','Anthony','Kevin','Danny',
+  'Timothy','Jose','Larry','Jeffrey','Frank',
+  'Eric','Stephen','Joshua','Raymond','Ryan'
+];
 
-// let gender = prompt('Enter your gender (Male  or Female)');
+let NamesOfFemale = [
+    'Agata','Agnes','HarrAdelaiday','Ida','Iris',
+    'Alice','Amanda','Amelia','Anastasia','Angelina',
+    'Ann','Ariel','Arya','Barbara','Beatrice',
+    'Bridget','Britney','Batty','Valery','Vanessa ',
+    'Wendy','Veronica','Vivian','Victoria','Viola',
+    'Gabriel','Gwen','Gwinnett','Gloria','Grace',
+    'Debra','Juliet','Jane','Janice	','Jenny	',
+    'Jennifer','Jessie','Jessica','Gill','Gina',
+    'Joan','Jodie','Joyce','Jocelyn','Judy',
+    'Julia','June','Diana','Dorothy','Eva'
+];
 
-// let NamesOfMale = [
-//   'Oliver','Jack','Harry','Jacob','Charley',
-//   'Thomas','George','Oscar','James','William',
-//   'Noah','Liam','Mason','Jacob','William',
-//   'Ethan','Michael','Alexander','James','Daniel ',
-//   'Abraham','Adam','John','Robert','David',
-//   'Richard','Charles','Joseph','Daniel','Paul',
-//   'Mark','Donald','Kenneth','Steven','Edward	',
-//   'Brian','Ronald','Anthony','Kevin','Danny',
-//   'Timothy','Jose','Larry','Jeffrey','Frank',
-//   'Eric','Stephen','Joshua','Raymond','Ryan'
-// ];
+function random(){
 
-// let NamesOfFemale = [
-//     'Agata','Agnes','HarrAdelaiday','Ida','Iris',
-//     'Alice','Amanda','Amelia','Anastasia','Angelina',
-//     'Ann','Ariel','Arya','Barbara','Beatrice',
-//     'Bridget','Britney','Batty','Valery','Vanessa ',
-//     'Wendy','Veronica','Vivian','Victoria','Viola',
-//     'Gabriel','Gwen','Gwinnett','Gloria','Grace',
-//     'Debra','Juliet','Jane','Janice	','Jenny	',
-//     'Jennifer','Jessie','Jessica','Gill','Gina',
-//     'Joan','Jodie','Joyce','Jocelyn','Judy',
-//     'Julia','June','Diana','Dorothy','Eva'
-// ];
+let max = 82;
+let min = 1;
+let age = Math.floor(Math.random()* (max - min) + min);
 
-// function random(){
-
-// let max = 82;
-// let min = 1;
-// let age = Math.floor(Math.random()* (max - min) + min);
-
-// if(gender === 'Male' || gender === 'male'){
-//     let randomMale = Math.floor(Math.random()*NamesOfMale.length);
-//     let malevalue = NamesOfMale[randomMale];
-//     console.log('Name: ' + malevalue +', age: ' + age +', gender: male')
-// }else if(gender === 'Female'|| gender === 'female'){
-//     let randomFemale = Math.floor(Math.random()*NamesOfFemale.length);
-//     let femalevalue = NamesOfFemale[randomFemale];
-//     console.log('Name: ' + femalevalue +', age: ' + age +', gender: female')
+if(gender === 'Male' || gender === 'male'){
+    let randomMale = Math.floor(Math.random()*NamesOfMale.length);
+    let malevalue = NamesOfMale[randomMale];
+    console.log('Name: ' + malevalue +', age: ' + age +', gender: male')
+}else if(gender === 'Female'|| gender === 'female'){
+    let randomFemale = Math.floor(Math.random()*NamesOfFemale.length);
+    let femalevalue = NamesOfFemale[randomFemale];
+    console.log('Name: ' + femalevalue +', age: ' + age +', gender: female')
    
-// }
-// }
-// random()
+}
+}
+random()
