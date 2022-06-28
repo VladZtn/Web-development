@@ -64,9 +64,9 @@ sum2 = Number(secondRunner.firstResult) + Number(secondRunner.secondResult) + Nu
 sum3 = Number(thirdRunner.firstResult) + Number(thirdRunner.secondResult) + Number(thirdRunner.thirdResult);
 console.log(' Время первого спортсмена - '+sum1.toFixed(2)+'\n Время второго спортсмена - '+sum2.toFixed(2)+'\n Время третьего спортсмена - '+sum3.toFixed(2));
 
-let lazy = (sum1 < sum2 && sum1 < sum3)  ?  console.log('Самый быстрый плавец - ' + firstRunner.name) 
-:(sum2 < sum1 && sum2 < sum3)  ? console.log('Самый быстрый плавец - ' + secondRunner.name) 
-:(sum3 < sum1 && sum3< sum2) ? console.log('Самый быстрый плавец - ' + thirdRunner.name): 'Error'
+let lazy = (sum1 < sum2 && sum1 < sum3)  ?  console.log('Самый медленный плавец - ' + firstRunner.name) 
+:(sum2 < sum1 && sum2 < sum3)  ? console.log('Самый медленный плавец - ' + secondRunner.name) 
+:(sum3 < sum1 && sum3< sum2) ? console.log('Самый медленный плавец - ' + thirdRunner.name): 'Error'
 
 let speedy = (sum1 > sum2 && sum1 > sum3)  ?  console.log('Самый быстрый плавец - ' + firstRunner.name) 
 :(sum2 > sum1 && sum2 > sum3)  ? console.log('Самый быстрый плавец - ' + secondRunner.name) 
