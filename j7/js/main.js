@@ -1,9 +1,3 @@
-//2
-// Соревнования по бегу
-// Создайте функцию, которая принимает массив из 6 объектов, 
-// в каждом есть фамилия бегуна и результаты трех его забегов в секундах. 
-// Вернуть объект с полями:
-
 function name(){
     let NamesOfMale = ['Oliver','Jack','Harry','Richard','Charles','Joseph','Daniel','Paul','Timothy','Jose','Larry','Jeffrey','Frank','Eric','Stephen','Joshua','Raymond','Ryan'];
     let randomMale = Math.floor(Math.random()*NamesOfMale.length);
@@ -29,8 +23,8 @@ let firstRunner = {
 console.log(firstRunner)
 document.getElementById('name1').innerHTML = firstRunner.name;
 document.getElementById('1.1').innerHTML = firstRunner.firstResult;
-document.getElementById('2.1').innerHTML = firstRunner.secondResult;
-document.getElementById('3.1').innerHTML = firstRunner.thirdResult;
+document.getElementById('1.2').innerHTML = firstRunner.secondResult;
+document.getElementById('1.3').innerHTML = firstRunner.thirdResult;
 
 
 let secondRunner = {
@@ -64,9 +58,9 @@ sum2 = Number(secondRunner.firstResult) + Number(secondRunner.secondResult) + Nu
 sum3 = Number(thirdRunner.firstResult) + Number(thirdRunner.secondResult) + Number(thirdRunner.thirdResult);
 console.log(' Время первого спортсмена - '+sum1.toFixed(2)+'\n Время второго спортсмена - '+sum2.toFixed(2)+'\n Время третьего спортсмена - '+sum3.toFixed(2));
 
-let lazy = (sum1 < sum2 && sum1 < sum3)  ?  console.log('Самый медленный плавец - ' + firstRunner.name) 
-:(sum2 < sum1 && sum2 < sum3)  ? console.log('Самый медленный плавец - ' + secondRunner.name) 
-:(sum3 < sum1 && sum3< sum2) ? console.log('Самый медленный плавец - ' + thirdRunner.name): 'Error'
+let lazy = (sum1 < sum2 && sum1 < sum3)  ?  console.log('Самый быстрый плавец - ' + firstRunner.name) 
+:(sum2 < sum1 && sum2 < sum3)  ? console.log('Самый быстрый плавец - ' + secondRunner.name) 
+:(sum3 < sum1 && sum3< sum2) ? console.log('Самый быстрый плавец - ' + thirdRunner.name): 'Error'
 
 let speedy = (sum1 > sum2 && sum1 > sum3)  ?  console.log('Самый быстрый плавец - ' + firstRunner.name) 
 :(sum2 > sum1 && sum2 > sum3)  ? console.log('Самый быстрый плавец - ' + secondRunner.name) 
@@ -77,10 +71,8 @@ name()
 RandomTime()
 Runners()
 
-//3
-// Пользователе-генератор.
-// Напишите функцию, которая принимает пол пользователя и возвращает объект данных о пользователе сгенерированных случайно. 
-// Имена выбирайте из заранее созданных массивов разных имен размером не меньше 50 элементов для каждого пола.
+
+
 
 let gender = prompt('Enter your gender (Male  or Female)');
 
