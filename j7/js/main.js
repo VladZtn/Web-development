@@ -74,49 +74,49 @@ Runners()
 
 
 
-let gender = prompt('Enter your gender (Male  or Female)');
+// let gender = prompt('Enter your gender (Male  or Female)');
 
-let NamesOfMale = [
-  'Oliver','Jack','Harry','Jacob','Charley',
-  'Thomas','George','Oscar','James','William',
-  'Noah','Liam','Mason','Jacob','William',
-  'Ethan','Michael','Alexander','James','Daniel ',
-  'Abraham','Adam','John','Robert','David',
-  'Richard','Charles','Joseph','Daniel','Paul',
-  'Mark','Donald','Kenneth','Steven','Edward	',
-  'Brian','Ronald','Anthony','Kevin','Danny',
-  'Timothy','Jose','Larry','Jeffrey','Frank',
-  'Eric','Stephen','Joshua','Raymond','Ryan'
-];
+// let NamesOfMale = [
+//   'Oliver','Jack','Harry','Jacob','Charley',
+//   'Thomas','George','Oscar','James','William',
+//   'Noah','Liam','Mason','Jacob','William',
+//   'Ethan','Michael','Alexander','James','Daniel ',
+//   'Abraham','Adam','John','Robert','David',
+//   'Richard','Charles','Joseph','Daniel','Paul',
+//   'Mark','Donald','Kenneth','Steven','Edward	',
+//   'Brian','Ronald','Anthony','Kevin','Danny',
+//   'Timothy','Jose','Larry','Jeffrey','Frank',
+//   'Eric','Stephen','Joshua','Raymond','Ryan'
+// ];
 
-let NamesOfFemale = [
-    'Agata','Agnes','HarrAdelaiday','Ida','Iris',
-    'Alice','Amanda','Amelia','Anastasia','Angelina',
-    'Ann','Ariel','Arya','Barbara','Beatrice',
-    'Bridget','Britney','Batty','Valery','Vanessa ',
-    'Wendy','Veronica','Vivian','Victoria','Viola',
-    'Gabriel','Gwen','Gwinnett','Gloria','Grace',
-    'Debra','Juliet','Jane','Janice	','Jenny	',
-    'Jennifer','Jessie','Jessica','Gill','Gina',
-    'Joan','Jodie','Joyce','Jocelyn','Judy',
-    'Julia','June','Diana','Dorothy','Eva'
-];
+// let NamesOfFemale = [
+//     'Agata','Agnes','HarrAdelaiday','Ida','Iris',
+//     'Alice','Amanda','Amelia','Anastasia','Angelina',
+//     'Ann','Ariel','Arya','Barbara','Beatrice',
+//     'Bridget','Britney','Batty','Valery','Vanessa ',
+//     'Wendy','Veronica','Vivian','Victoria','Viola',
+//     'Gabriel','Gwen','Gwinnett','Gloria','Grace',
+//     'Debra','Juliet','Jane','Janice	','Jenny	',
+//     'Jennifer','Jessie','Jessica','Gill','Gina',
+//     'Joan','Jodie','Joyce','Jocelyn','Judy',
+//     'Julia','June','Diana','Dorothy','Eva'
+// ];
 
-function random(){
+// function random(){
 
-let max = 82;
-let min = 1;
-let age = Math.floor(Math.random()* (max - min) + min);
+// let max = 82;
+// let min = 1;
+// let age = Math.floor(Math.random()* (max - min) + min);
 
-if(gender === 'Male' || gender === 'male'){
-    let randomMale = Math.floor(Math.random()*NamesOfMale.length);
-    let malevalue = NamesOfMale[randomMale];
-    console.log('Name: ' + malevalue +', age: ' + age +', gender: male')
-}else if(gender === 'Female'|| gender === 'female'){
-    let randomFemale = Math.floor(Math.random()*NamesOfFemale.length);
-    let femalevalue = NamesOfFemale[randomFemale];
-    console.log('Name: ' + femalevalue +', age: ' + age +', gender: female')
+// if(gender === 'Male' || gender === 'male'){
+//     let randomMale = Math.floor(Math.random()*NamesOfMale.length);
+//     let malevalue = NamesOfMale[randomMale];
+//     console.log('Name: ' + malevalue +', age: ' + age +', gender: male')
+// }else if(gender === 'Female'|| gender === 'female'){
+//     let randomFemale = Math.floor(Math.random()*NamesOfFemale.length);
+//     let femalevalue = NamesOfFemale[randomFemale];
+//     console.log('Name: ' + femalevalue +', age: ' + age +', gender: female')
    
-}
-}
-random()
+// }
+// }
+// random()
