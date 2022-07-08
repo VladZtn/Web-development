@@ -1,0 +1,21 @@
+h1{
+    position: relative;
+    top: 25px;
+    left: 50px;
+}
+
+li{
+    list-style-type: none;
+    position: relative;
+    margin: 2px;
+    padding: 0.5em 0.5em 0.5em 2em;
+    background: rgb(165,204,218);
+    font-family: sans-serif;
+    width: 500px;
+    top: 50px;
+}
+  
+li.complete{
+    background: rgb(226,226,226);
+    text-decoration: line-through;
+}
