@@ -1,0 +1,135 @@
+body{
+    background-image: url(https://img1.akspic.ru/crops/5/5/7/7/6/167755/167755-more-plyazh-okean-poberezhe-bereg-1920x1080.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header{
+    position: relative;
+    width: 300px;
+    height: 50px;
+    background-color: rgb(41,41,41);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#list{
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+#volume{
+    position: relative;
+    top: 0px;
+    left: 215px;
+    opacity: 0.6;
+}
+
+.text{
+    position: relative;
+    width: 300px;
+    height: 75px;
+    background-color: black;
+    opacity: 0.5;
+    top: -120px;
+}
+
+
+h1{
+    position: relative;
+    color: white;
+    top: -210px;
+    left: 120px;
+}
+
+p{
+    position: relative;
+    color: white;
+    top: -220px;
+    left: 90px;
+    opacity: 0.7;  
+}
+
+.bg-bar{
+    position: relative;
+    height: 42px;
+    width: 300px;
+    background-color: black;
+    opacity: 0.6;
+    top: -235px;
+}
+
+#pause{
+    position: relative;
+    top: -272px;
+    left: 5px;
+}
+
+.bar{
+    position: relative;
+    width: 200px;
+    height: 10px;
+    background-color: aqua;
+    opacity: 0.1;
+    border-radius: 10px;
+    top: -295px;
+    left: 45px;
+}
+
+.bars{
+    position: relative;
+    width: 175px;
+    height: 10px;
+    background-color: rgb(84,198,217);
+    border-radius: 10px;
+    top: -305px;
+    left: 45px;
+}
+
+#time{
+    position: relative;
+    top: -333px;
+    left: 255px;
+}
+
+.footer{
+    position: relative;
+    width: 300px;
+    height: 50px;
+    background-color: rgb(41,41,41);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    top: 40px;
+    left: -300px;
+}
+#random{
+    position: relative;
+    top: 5px;
+    left: 10px;
+}
+
+#loop{
+    position: relative;
+    top: 5px;
+    left: 35px;
+}
+
+#plus{
+    position: relative;
+    top: 5px;
+    left: 65px;
+}
+
+#like{
+    position: relative;
+    top: 5px;
+    left: 100px;
+}
+
+#share{
+    position: relative;
+    top: 5px;
+    left: 130px;
+}
