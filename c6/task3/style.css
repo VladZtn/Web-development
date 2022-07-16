@@ -1,0 +1,96 @@
+body{
+    background-color: rgb(216,212,200);
+}
+
+.main{
+    background-color: rgb(243,239,226);
+    width: 350px;
+    height: 450px;
+}
+
+#img{
+    position: relative;
+    top: 10px;
+    left: 25px;
+    width: 300px;
+    height: 200px;
+}
+
+#time{
+    position: relative;
+    top: -45px;
+    left: 10px;
+    color: rgb(255,168,149);
+    font-size: 75px;
+}
+
+
+#t1{
+    position: relative;
+    top: -190px;
+    left: 175px;
+    font-size: 23px;  
+}
+
+#t2{
+    position: relative;
+    top: -200px;
+    left: 175px;
+    font-size: 20px;
+    color: rgb(183,179,167);
+}
+
+.bar{
+    position: relative;
+    top: -200px;
+    width: 350px;
+    height: 25px;
+    background-color: rgb(255,168,149);
+}
+
+.bars{
+    position: relative;
+    top: 0px;
+    left: 275px;
+    width: 75px;
+    height: 25px;
+    background-color: rgb(225,148,132);
+}
+
+.footer{
+    position: relative;
+    top: -200px;
+    width: 350px;
+    height: 95px;
+    background-color: rgb(90,68,80);
+}
+
+.buttons{
+    position: relative;
+    top: 25px;
+    left: 15px;
+}
+
+#prev{
+    position: relative;
+    left: 5px;
+}
+
+#next{
+    position: relative;
+    left: 15px;
+}
+
+#loop{
+    position: relative;
+    top: -5px;
+    left: 75px;
+    opacity: 0.7;
+}
+
+#share{
+    position: relative;
+    top: -5px;
+    left: 100px;
+    opacity: 0.7;
+}
