@@ -1,0 +1,117 @@
+body{
+    background-color: rgb(210,213,214);
+}
+
+.img{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.body{
+    position: relative;
+    height: 350px;
+    width: 400px;
+    background-color: rgb(226,230,232);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    top: -25px;
+}
+
+.text{
+    position: relative;
+    top: 50px;
+    left: 25px;
+}
+
+#frs{
+    position: relative;
+    color: rgb(69,85,105);
+    font-weight: 600;
+    font-size: 30px;
+}
+
+p{
+    position: relative;
+    top: -20px;
+    color: rgb(69,85,105);
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -150px;
+    left: 235px;
+}
+
+#share{
+    opacity: 0.3;
+    margin-right: 15px;
+}
+
+#fav{
+    opacity: 0.2;
+    margin-right: 15px; 
+}
+
+.music-bar{
+    position: relative;
+    top: 35px;
+    left: 20px;
+    height: 10px;
+    width: 350px;
+    background-color: rgb(65,65,65);
+    border-radius: 10px;
+}
+
+.music-bar-up{
+    content: ' ';
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 10px;
+    width: 150px;
+    background-color: rgb(205,210,215);
+    border-radius: 10px;
+}
+
+.buttons{
+    position: relative;
+    top: 75px;
+    left: 20px;
+}
+
+#pause{
+    position: relative;
+    top: -15px;
+    left: -10px;
+}
+
+
+#next{
+   position: relative;
+   top: -25px;
+   left: -25px;
+}
+
+#prev{
+   position: relative;
+   top: -25px;
+   left: -15px;
+}
+
+#random{
+    position: relative;
+    left: 50px;
+    top: -30px;
+    opacity: 0.3;
+}
+
+#retweet{
+    position: relative;
+    left: 25px;
+    top: -30px;
+    opacity: 0.3;
+}
