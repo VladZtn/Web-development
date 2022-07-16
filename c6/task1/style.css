@@ -1,0 +1,230 @@
+body{
+    background-color: rgb(230,234,238);
+}
+
+.main{
+    position: relative;
+    left: 120px;
+}
+
+.img{
+    border-radius: 5%;
+}
+/*---------Left Panel---------*/
+.leftpanel{
+    position: absolute;
+    width: 100px;
+    height: 500px;
+    background-color: rgb(68,77,86);
+    top: 60px;
+    left: 78px;
+    border-radius: 10px;
+    
+}
+
+#share{
+    position: relative;
+    top: 100px;
+    left: 10px;
+    cursor: pointer;
+}
+
+#like{
+    position: relative;
+    top: 150px;
+    left: -23px;
+    cursor: pointer;
+}
+
+#retweet{
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    cursor: pointer;
+}
+
+#random{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    cursor: pointer;
+}
+
+#plus{
+    position: absolute;
+    top: 200px;
+    left: 10px;
+    cursor: pointer;
+}
+
+#volumeup{
+  position: absolute;
+  top: 5px;
+  left: 10px; 
+  cursor: pointer; 
+}
+
+.volume{
+    position: absolute;
+    height: 175px;
+    width: 75px;
+    background-color: rgb(97,108,119);
+    top: 250px;
+}
+
+.volumebar{
+    position: absolute;
+    top: 45px;
+    left: 15px;
+    width: 15px;
+    height: 100px;
+    background-color: gray;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+.volumebarf{
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    width: 15px;
+    height: 75px;
+    background-color: rgb(46,54,61);
+    border-radius: 10px;
+}
+
+
+#volumedown{
+    position: absolute;
+    top: 145px;
+    left: 10px;  
+    cursor: pointer;
+  }
+  
+
+#settings{
+    position: absolute;
+    top: 450px;
+    left: 10px;
+    cursor: pointer;
+}
+
+/*---------------------------------------*/
+/*Song div*/
+.song{
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    background-color: rgba(116, 145, 164, 0.4);
+    width: 350px;
+    top: 280px;
+    height: 130px;
+    border-radius: 3%;
+}
+
+p{
+    text-align: center;
+}
+/*Remote buttons*/
+.remote{
+    position: absolute;
+    top: 125px;
+    width: 350px;
+    height: 175px;
+    background-color: white;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+/*---------------------------------------*/
+/*Pause button*/
+.pause{
+    position: relative;
+    top: -50px;
+    left: 150px;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+/*Circle*/
+.circle{
+    position: relative;
+    top: 30px;
+    left: 133px;
+    width: 95px;
+    height: 95px;
+    background: blue;
+    opacity: 0.04;
+    border-radius: 50%
+}
+/*---------------------*/
+/*Previous button*/
+.backward{
+    position: relative;
+    top: -125px;
+    left: 20px;
+    width: 75px;
+    height: 75px
+}
+
+.backwardic{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    top: -190px;
+    left: 33px;
+    cursor: pointer;
+}
+/*---------------------*/
+/*Next button*/
+.next{
+    position: relative;
+    width: 75px;
+    height: 75px;
+    top: -255px;
+    left: 260px;
+    
+}
+
+.nextic{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: -320px;
+    left: 275px;
+    cursor: pointer;
+}
+/*---------------------*/
+/*Musicbar*/
+.bar{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 250px;
+    height: 15px;
+    background-color: black;
+    border-radius: 10px;
+    opacity: 0.3;
+}
+
+.barf{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 200px;
+    height: 15px;
+    background-color: rgb(255,104,96);
+    border-radius: 10px;
+}
+/*---------------------*/
+/* Time */
+.timef{
+    position: absolute;
+    top: 95px;
+}
+
+.times{
+    position: absolute;
+    left: 305px;
+    top: 95px;
+}
+/*---------------------*/
