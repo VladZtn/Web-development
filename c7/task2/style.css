@@ -1,0 +1,361 @@
+body{
+    background-image: url(https://i.pinimg.com/originals/fa/4b/38/fa4b384047a85fcccd0e42c2195f88e2.jpg);
+}
+
+.main {
+    display: flex;
+    height: 900px;
+    justify-content: center;
+    align-items: center;    
+}
+/*----------Left Panel----------*/
+.leftpanel{
+    display: flex;
+    width: 200px;
+    height: 800px;
+    background-color: white; /*rgba(245, 245, 245, 0.738); */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.leftpanel h3{
+    position: relative;
+    top: 40px;
+    left: 40px;
+}
+
+.leftpanel span{
+    color: orangered;
+}
+
+.leftFooter{
+    display: flex;
+    margin-top: 150px;
+    flex-direction: column;
+}
+
+#img{
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+}
+
+#settings{
+    position: relative;
+    top: -30px;
+    left: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid gainsboro;
+    cursor: pointer;
+}
+
+#exit{
+    position: relative;
+    margin-left: 50px;
+    top: -60px;
+    width: 30px;
+    height: 30px; 
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid gainsboro;
+    cursor: pointer;
+}
+
+.leftFooter h3{
+    position: relative;
+    font-weight: 400;
+    top: -5px;
+    left: -5px;
+}
+
+.leftFooter p{
+    position: relative;
+    top: -30px;
+    left: -40px;
+    width: 175px;
+    color: rgb(204,196,195);
+}
+/*----------MB header----------*/
+.body{
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    height: 800px;
+    background-color: whitesmoke;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px
+}
+/*----------Header----------*/
+.header{
+    display: flex;
+    flex-direction: row;
+}
+
+.header h1{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.header input{
+    margin-top: 60px;
+    margin-left: 100px;
+    width: 300px;
+    height: 25px;
+    border: none;
+    background-color: rgb(248,248,248);
+}
+
+.header input::placeholder{
+    position: relative;
+    top: -1px;
+    background: url(icons/search.svg) no-repeat;
+    height: 30px;
+}
+
+#mail{
+    position: relative;
+    top: 50px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    margin-left: 120px;
+    border: 1px solid gainsboro;
+    cursor: pointer;
+}
+
+.material-symbols-outlined{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#notify{
+    position: relative;
+    top: 50px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    margin-left: 15px;
+    border: 1px solid gainsboro;
+    cursor: pointer;
+}
+
+#create{
+    position: relative;
+    top: 50px;
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+    margin-left: 15px;
+    background-color: rgb(23,18,15);
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+#plus{
+    position: relative;
+    bottom: 0px;
+    font-size: 20px;
+}
+
+#text{
+    position: relative;
+    top: -1px;
+}
+/*----------Buttons----------*/
+.buttons{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    top: 100px;
+}
+
+#text1{
+    position: relative;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    top: 5px;
+    left: 10px;
+}
+
+#btn1{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: -50px;
+    width: 130px;
+    height: 35px;
+    font-size: 13px;
+    border-radius: 5px;
+    background-color: rgb(23,18,15);
+    cursor: pointer;
+}
+
+:is(#btn2,#btn3,#btn4,#btn5,#btn6){
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: -50px;
+    width: 130px;
+    height: 35px;
+    font-size: 13px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+:is(#text2,#text3,#text4,#text5,#text6){
+    position: relative;
+    color: black;
+    font-weight: 600;
+    font-size: 15px;
+    top: 5px;
+    left: 10px;
+}
+/*---------Block with stats---------*/
+.stb{
+    display: flex;
+    flex-direction: row;
+}
+
+.stats{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+/*---------Right buttons---------*/
+.btn-right{
+    display: flex;
+    flex-direction: column;
+}
+
+#frs-btn{
+    position: relative;
+    top: 40px;
+    left: 50px;
+    width: 225px;
+    height: 75px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+
+#sec-btn{
+    position: relative;
+    top: 50px;
+    left: 50px;
+    width: 225px;
+    height: 75px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+
+#thr-btn{
+    position: relative;
+    top: 60px;
+    left: 50px;
+    width: 225px;
+    height: 75px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+/*---------Footer---------*/
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#footer{
+    position: relative;
+    left: -10px;
+    width: 875px;
+    height: 350px;
+    border-radius: 10px;
+    border: 1px solid gainsboro;
+}
+/*---------Left Panel Icons---------*/
+
+#icn1{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 25px;
+    height: 25px;
+    background-color: gainsboro;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#icn2{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 25px;
+    height: 25px;
+    background-color: orange;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#icn3{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 25px;
+    height: 25px;
+    background-color: forestgreen;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.icon1 p{
+    position: relative;
+    top: -35px;
+    left: 70px;
+    color: rgb(204,196,195);
+}
+
+
+.icon1 h3{
+    position: relative;
+    top: -55px;
+    left: 70px;
+}
+
+.icon2 p{
+    position: relative;
+    top: -35px;
+    left: 70px;
+    color: rgb(204,196,195);
+}
+
+
+.icon2 h3{
+    position: relative;
+    top: -55px;
+    left: 70px;
+}
+
+.icon3 p{
+    position: relative;
+    top: -35px;
+    left: 70px;
+    color: rgb(204,196,195);
+}
+
+
+.icon3 h3{
+    position: relative;
+    top: -55px;
+    left: 70px;
+}
