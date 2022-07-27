@@ -14,4 +14,4 @@ j6 - https://vladztn.github.io/homework/j6/ \
 j7 - https://vladztn.github.io/homework/j7/ \
 j8 - https://vladztn.github.io/homework/j8/ \
 j9 - https://vladztn.github.io/homework/j9/ \
-j10 - https://vladztn.github.io/homework/j10/ \
+j10 - https://vladztn.github.io/homework/j10/ 
