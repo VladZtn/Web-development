@@ -1,5 +1,6 @@
 # CSS
-c2  - https://vladztn.github.io/homework/c2/ 
+c2  - https://vladztn.github.io/homework/c2/ \
+
 c3 - https://vladztn.github.io/homework/c3/
 c4 - https://vladztn.github.io/homework/c4/
 c5 - https://vladztn.github.io/homework/c5/ts2/
