@@ -1,0 +1,1921 @@
+body {
+	background-color: gray;
+}
+
+.box {
+	text-align: center;
+	background-color: #eeeeee;
+}
+
+.chess-board {
+	border: 3px solid white;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+.chess-board td {
+	border: 1px solid;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.white {
+	background-color: rgb(187, 180, 180);
+}
+
+.black {
+	background-color: rgb(155, 114, 3);
+}
+
+/* --------------------------King---------------------------------------- */
+@keyframes blackKing {
+	0% {
+		top: 20px;
+	}
+
+	20% {
+		top: 20px;
+		left: 75px;
+	}
+
+	25% {
+		top: 20px;
+		left: 10px;
+	}
+
+	30% {
+		top: 75px;
+		left: 75px;
+	}
+
+	40% {
+		top: 20px;
+		left: 10px;
+	}
+
+	50% {
+		top: 75px;
+	}
+
+	60% {
+		top: 20px;
+		left: 10px;
+	}
+
+	75% {
+		top: 75px;
+		left: -50px;
+	}
+
+	80% {
+		top: 20px;
+		left: 10px;
+	}
+
+	90% {
+		top: 20px;
+		left: -50px;
+	}
+
+	100% {
+		top: 20px;
+		left: 10px;
+	}
+}
+
+.king {
+	width: 40px;
+	height: 15px;
+	background: black;
+	border-radius: 100px/50px;
+	position: relative;
+	top: 20px;
+	left: 10px;
+	cursor: pointer;
+}
+
+.king:hover {
+	animation: blackKing 5s linear;
+}
+
+.king::before {
+	content: '';
+	width: 10;
+	height: 5;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 30px solid black;
+	border-radius: 100px/50px;
+	position: relative;
+	top: 2px;
+	left: 5px;
+}
+
+.king::after {
+	content: '✚';
+	position: relative;
+	top: -40px;
+	left: -17px;
+	width: 20px;
+	height: 15px;
+}
+
+@keyframes whiteKing {
+	0% {
+		top: 20px;
+	}
+
+	20% {
+		top: 20px;
+		left: 75px;
+	}
+
+	25% {
+		top: 20px;
+		left: 10px;
+	}
+
+	30% {
+		top: -50px;
+		left: 75px;
+	}
+
+	40% {
+		top: 20px;
+		left: 10px;
+	}
+
+	50% {
+		top: -50px;
+	}
+
+	60% {
+		top: 20px;
+		left: 10px;
+	}
+
+	75% {
+		top: -50px;
+		left: -50px;
+	}
+
+	80% {
+		top: 20px;
+		left: 10px;
+	}
+
+	90% {
+		top: 20px;
+		left: -50px;
+	}
+
+	100% {
+		top: 20px;
+		left: 10px;
+		;
+	}
+}
+
+.white-king {
+	width: 40px;
+	height: 15px;
+	background: white;
+	border-radius: 100px/50px;
+	position: relative;
+	top: 20px;
+	left: 10px;
+	cursor: pointer;
+}
+
+.white-king:hover {
+	animation: whiteKing 5s linear;
+}
+
+.white-king::before {
+	content: '';
+	width: 10;
+	height: 5;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 30px solid white;
+	border-radius: 100px/50px;
+	position: relative;
+	top: 2px;
+	left: 5px;
+}
+
+.white-king::after {
+	content: '✚';
+	color: white;
+	position: relative;
+	top: -40px;
+	left: -17px;
+	width: 20px;
+	height: 15px;
+}
+
+/* --------------------------Quenn---------------------------------------- */
+@keyframes blackQueen {
+	0% {
+		top: 20px;
+		left: 10px;
+	}
+
+	5% {
+		top: 20px;
+		left: 75px;
+	}
+
+	10% {
+		top: 20px;
+		left: 10px;
+	}
+
+	15% {
+		top: 20px;
+		left: 135px;
+	}
+
+	20% {
+		top: 20px;
+		left: 10px;
+	}
+
+	25% {
+		top: 20px;
+		left: 200px;
+	}
+
+	30% {
+		top: 20px;
+		left: 10px;
+	}
+
+	35% {
+		top: 20px;
+		left: 265px;
+	}
+
+	40% {
+		top: 20px;
+		left: 10px;
+	}
+
+	50% {
+		top: 85px;
+		left: -55px;
+	}
+
+	60% {
+		top: 20px;
+		left: 10px;
+	}
+
+	70% {
+		top: 145px;
+		left: -120px;
+	}
+
+	80% {
+		top: 20px;
+		left: 10px;
+	}
+
+	90% {
+		top: 210px;
+		left: -180px;
+	}
+
+	100% {
+		top: 20px;
+		left: 10px;
+	}
+}
+
+.queen {
+	width: 40px;
+	height: 15px;
+	background: black;
+	border-radius: 100px/50px;
+	position: relative;
+	top: 20px;
+	left: 10px;
+	cursor: pointer;
+}
+
+.queen:hover {
+	animation: blackQueen 20s;
+}
+
+.queen::before {
+	content: ' ';
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 30px solid black;
+	position: relative;
+	top: -60px;
+	left: 5px;
+	border-radius: 15px;
+}
+
+.queen::after {
+	content: '♛';
+	position: relative;
+	top: -50px;
+	left: -25px;
+	font-size: 30px;
+}
+
+/*------White-Queen------*/
+@keyframes whiteQueen {
+	0% {
+		top: 20px;
+		left: 10px;
+	}
+
+	5% {
+		top: 20px;
+		left: 75px;
+	}
+
+	10% {
+		top: 20px;
+		left: 10px;
+	}
+
+	15% {
+		top: 20px;
+		left: 135px;
+	}
+
+	20% {
+		top: 20px;
+		left: 10px;
+	}
+
+	25% {
+		top: 20px;
+		left: 200px;
+	}
+
+	30% {
+		top: 20px;
+		left: 10px;
+	}
+
+	35% {
+		top: 20px;
+		left: 265px;
+	}
+
+	40% {
+		top: 20px;
+		left: 10px;
+	}
+
+	50% {
+		top: -45px;
+		left: -55px;
+	}
+
+	60% {
+		top: 20px;
+		left: 10px;
+	}
+
+	70% {
+		top: -105px;
+		left: -120px;
+	}
+
+	80% {
+		top: 20px;
+		left: 10px;
+	}
+
+	90% {
+		top: -170px;
+		left: -180px;
+	}
+
+	100% {
+		top: 20px;
+		left: 10px;
+	}
+}
+
+
+.white-queen {
+	width: 40px;
+	height: 15px;
+	background: white;
+	border-radius: 100px/50px;
+	position: relative;
+	top: 20px;
+	left: 10px;
+	cursor: pointer;
+}
+
+.white-queen:hover {
+	animation: whiteQueen 20s;
+}
+
+.white-queen::before {
+	content: ' ';
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 30px solid white;
+	position: relative;
+	top: -60px;
+	left: 5px;
+	border-radius: 15px;
+}
+
+.white-queen::after {
+	content: '♕';
+	color: white;
+	position: relative;
+	top: -50px;
+	left: -25px;
+	font-size: 30px;
+}
+
+/* --------------------------Pawn---------------------------------------- */
+@keyframes blackPawn {
+	0% {
+		top: -5px;
+	}
+
+	25% {
+		top: 50px;
+	}
+
+	50% {
+		top: -5px;
+	}
+
+	75% {
+		top: 120px;
+	}
+
+	100% {
+		top: -5px;
+	}
+}
+
+
+.pawn {
+	width: 0;
+	height: 0;
+	position: relative;
+	border-radius: 25px;
+	top: -5px;
+	left: -0px;
+	cursor: pointer;
+}
+
+.pawn:hover {
+	animation: blackPawn 3s linear;
+}
+
+.pawn::before {
+	content: 'I';
+	width: 0;
+	height: 0;
+	font-weight: bold;
+	font-size: 50px;
+	position: relative;
+	top: -20px;
+	left: 20px;
+}
+
+.pawn::after {
+	content: '⚫';
+	position: relative;
+	top: -45px;
+	left: -1px;
+}
+
+@keyframes whitePawn {
+	0% {
+		top: -20px;
+	}
+
+	25% {
+		top: -50px;
+	}
+
+	50% {
+		top: 15px;
+	}
+
+	75% {
+		top: -120px;
+	}
+
+	100% {
+		top: 15px;
+	}
+}
+
+
+.white-pawn {
+	width: 0;
+	height: 0;
+	position: relative;
+	border-radius: 25px;
+	top: 15px;
+	left: 10px;
+	cursor: pointer;
+}
+
+.white-pawn:hover {
+	animation: whitePawn 3s;
+}
+
+.white-pawn::before {
+	content: 'I';
+	color: white;
+	width: 0;
+	height: 0;
+	font-weight: bold;
+	font-size: 50px;
+	position: relative;
+	top: -35px;
+	left: 10px;
+}
+
+.white-pawn::after {
+	content: '⚪';
+	position: relative;
+	top: -60px;
+	left: -11px;
+}
+
+/* -----Steed------ */
+@keyframes blackSteed-l {
+	0% {
+		top: 20px;
+		left: 10px;
+	}
+
+	10% {
+		top: 145px;
+		left: -50px;
+	}
+
+	25% {
+		left: 10px;
+		top: 20px;
+	}
+
+	40% {
+		top: 145px;
+		left: 75px;
+	}
+
+	45% {
+		top: 20px;
+		left: 10px;
+	}
+
+	50% {
+		top: 74px;
+		left: 150px;
+	}
+
+	100% {
+		top: 20px;
+		left: 10px;
+	}
+}
+
+.steed-l {
+	width: 40px;
+	height: 15px;
+	background: black;
+	border-radius: 100px/50px;
+	position: relative;
+	top: 20px;
+	left: 10px;
+}
+
+.steed-l:hover {
+	animation: blackSteed-l 20s;
+}
+
+.steed-l::before {
+	content: '♞';
+	font-size: 60px;
+	position: relative;
+	top: -55px;
+	left: -13px;
+}
+
+/*--------Steed-Right-------*/
+@keyframes blackSteed-r {
+	0% {
+		top: 20px;
+		left: 10px;
+	}
+
+	10% {
+		top: 145px;
+		left: -50px;
+	}
+
+	25% {
+		left: 10px;
+		top: 20px;
+	}
+
+	40% {
+		top: 145px;
+		left: 75px;
+	}
+
+	45% {
+		top: 20px;
+		left: 10px;
+	}
+
+	50% {
+		top: 80px;
+		left: -110px;
+	}
+
+	100% {
+		top: 20px;
+		left: 10px;
+	}
+}
+
+.steed-r {
+	width: 40px;
+	height: 15px;
+	background: black;
+	border-radius: 100px/50px;
+	position: relative;
+	top: 20px;
+	left: 10px;
+}
+
+.steed-r:hover {
+	animation: blackSteed-r 20s;
+}
+
+.steed-r::before {
+	content: '♞';
+	font-size: 60px;
+	position: relative;
+	top: -55px;
+	left: -13px;
+}
+
+/*--------Steed-Left--------*/
+@keyframes whiteSteed-l {
+	0% {
+		top: 20px;
+		left: 10px;
+	}
+
+	10% {
+		top: -110px;
+		left: -50px;
+	}
+
+	20% {
+		left: 10px;
+		top: 20px;
+	}
+
+	30% {
+		top: -110px;
+		left: 75px;
+	}
+
+	50% {
+		top: 20px;
+		left: 10px;
+	}
+
+	75% {
+		top: -40px;
+		left: 135px;
+	}
+
+	100% {
+		top: 20px;
+		left: 10px;
+	}
+}
+
+.white-steed-l {
+	width: 40px;
+	height: 15px;
+	background: white;
+	border-radius: 100px/50px;
+	position: relative;
+	top: 20px;
+	left: 10px;
+}
+
+.white-steed-l:hover {
+	animation: whiteSteed-l 20s;
+}
+
+.white-steed-l::before {
+	content: '♘';
+	color: white;
+	font-size: 60px;
+	position: relative;
+	top: -55px;
+	left: -13px;
+}
+
+/*---------Right--------*/
+@keyframes whiteSteed-r {
+	0% {
+		top: 20px;
+		left: 10px;
+	}
+
+	10% {
+		top: -110px;
+		left: -50px;
+	}
+
+	25% {
+		left: 10px;
+		top: 20px;
+	}
+
+	40% {
+		top: -110px;
+		left: 75px;
+	}
+
+	45% {
+		top: 20px;
+		left: 10px;
+	}
+
+	50% {
+		top: -45px;
+		left: -110px;
+	}
+
+	100% {
+		top: 20px;
+		left: 10px;
+	}
+}
+
+
+.white-steed-r {
+	width: 40px;
+	height: 15px;
+	background: white;
+	border-radius: 100px/50px;
+	position: relative;
+	top: 20px;
+	left: 10px;
+	cursor: pointer;
+}
+
+.white-steed-r:hover {
+	animation: whiteSteed-r 20s;
+}
+
+.white-steed-r::before {
+	content: '♘';
+	color: white;
+	font-size: 60px;
+	position: relative;
+	top: -55px;
+	left: -13px;
+}
+
+
+/* --------------------------Rook---------------------------------------- */
+@keyframes blackRook-r {
+	0% {
+		top: 15px;
+		left: 10px;
+		color: black;
+	}
+
+	3.33% {
+		top: 80px;
+	}
+
+	6.66% {
+		top: 15px;
+		left: 10px;
+	}
+
+	9.99% {
+		top: 145px;
+	}
+
+	13.32% {
+		top: 15px;
+		left: 10px;
+	}
+
+	16.65% {
+		top: 205px;
+	}
+
+	19.95% {
+		top: 15px;
+		left: 10px;
+	}
+
+	23.28% {
+		top: 275px;
+	}
+
+	26.61% {
+		top: 15px;
+		left: 10px;
+	}
+
+	29.94% {
+		top: 335px;
+	}
+
+	33.27% {
+		top: 15px;
+		left: 10px;
+	}
+
+	36.6% {
+		top: 395px;
+	}
+
+	39.9% {
+		top: 15px;
+		left: 10px;
+	}
+
+	43.23% {
+		top: 455px;
+	}
+
+	46.56% {
+		top: 15px;
+		left: 10px;
+	}
+
+	49.89% {
+		left: -50px;
+	}
+
+	53.22% {
+		left: 10px;
+	}
+
+	56.55% {
+		left: -115px;
+	}
+
+	59.88% {
+		left: 10px;
+	}
+
+	63.21% {
+		left: -175px;
+	}
+
+	66.54% {
+		left: 10px;
+	}
+
+	69.87% {
+		left: -245px;
+	}
+
+	73.2% {
+		left: 10px;
+	}
+
+	76.53% {
+		left: -315px;
+	}
+
+	79.87% {
+		left: 10px;
+	}
+
+	83.2% {
+		left: -380px;
+	}
+
+	86.53% {
+		left: 10px;
+	}
+
+	89.86% {
+		left: -450px
+	}
+
+	93.19% {
+		left: 10px;
+		color: white;
+	}
+}
+
+
+.rook-r {
+	width: 0;
+	height: 0;
+	position: relative;
+	top: 15px;
+	left: 10px;
+	cursor: pointer;
+}
+
+.rook-r:hover {
+	animation: blackRook-r 20s;
+}
+
+.rook-r::before {
+	content: 'I';
+	width: 150px;
+	height: 0;
+	position: relative;
+	font-size: 40px;
+	top: -25px;
+	left: 10px;
+	font-weight: bold;
+}
+
+.rook-r::after {
+	content: 'Ш';
+	position: relative;
+	font-size: 30px;
+	font-weight: bold;
+	top: -50px;
+	left: -14px;
+}
+
+/*--------Rook-left--------*/
+@keyframes blackRook-l {
+	0% {
+		top: 15px;
+		left: 10px;
+		color: black;
+	}
+
+	3.33% {
+		top: 80px;
+	}
+
+	6.66% {
+		top: 15px;
+		left: 10px;
+	}
+
+	9.99% {
+		top: 145px;
+	}
+
+	13.32% {
+		top: 15px;
+		left: 10px;
+	}
+
+	16.65% {
+		top: 205px;
+	}
+
+	19.95% {
+		top: 15px;
+		left: 10px;
+	}
+
+	23.28% {
+		top: 275px;
+	}
+
+	26.61% {
+		top: 15px;
+		left: 10px;
+	}
+
+	29.94% {
+		top: 335px;
+	}
+
+	33.27% {
+		top: 15px;
+		left: 10px;
+	}
+
+	36.6% {
+		top: 395px;
+	}
+
+	39.9% {
+		top: 15px;
+		left: 10px;
+	}
+
+	43.23% {
+		top: 455px;
+	}
+
+	46.56% {
+		top: 15px;
+		left: 10px;
+	}
+
+	49.89% {
+		left: 75px;
+	}
+
+	53.22% {
+		left: 10px;
+	}
+
+	56.55% {
+		left: 135px;
+	}
+
+	59.88% {
+		left: 10px;
+	}
+
+	63.21% {
+		left: 195px;
+	}
+
+	66.54% {
+		left: 10px;
+	}
+
+	69.87% {
+		left: 265px;
+	}
+
+	73.2% {
+		left: 10px;
+	}
+
+	76.53% {
+		left: 335px;
+	}
+
+	79.87% {
+		left: 10px;
+	}
+
+	83.2% {
+		left: 400px;
+	}
+
+	86.53% {
+		left: 10px;
+	}
+
+	89.86% {
+		left: 470px
+	}
+
+	93.19% {
+		left: 10px;
+		color: white;
+	}
+}
+
+.rook-l {
+	width: 0;
+	height: 0;
+	position: relative;
+	top: 15px;
+	left: 10px;
+	cursor: pointer;
+}
+
+.rook-l:hover {
+	animation: blackRook-l 20s;
+}
+
+.rook-l::before {
+	content: 'I';
+	width: 150px;
+	height: 0;
+	position: relative;
+	font-size: 40px;
+	top: -25px;
+	left: 10px;
+	font-weight: bold;
+}
+
+.rook-l::after {
+	content: 'Ш';
+	position: relative;
+	font-size: 30px;
+	font-weight: bold;
+	top: -50px;
+	left: -14px;
+}
+
+/*-------------------------*/
+@keyframes whiteRook-r {
+	0% {
+		top: 15px;
+		left: 10px;
+		color: white;
+	}
+
+	3.33% {
+		top: -50px;
+	}
+
+	6.66% {
+		top: 15px;
+		left: 10px;
+	}
+
+	9.99% {
+		top: -115px;
+	}
+
+	13.32% {
+		top: 15px;
+		left: 10px;
+	}
+
+	16.65% {
+		top: -175px;
+	}
+
+	19.95% {
+		top: 15px;
+		left: 10px;
+	}
+
+	23.28% {
+		top: -235px;
+	}
+
+	26.61% {
+		top: 15px;
+		left: 10px;
+	}
+
+	29.94% {
+		top: -305px;
+	}
+
+	33.27% {
+		top: 15px;
+		left: 10px;
+	}
+
+	36.6% {
+		top: -365px;
+	}
+
+	39.9% {
+		top: 15px;
+		left: 10px;
+	}
+
+	43.23% {
+		top: -425px;
+	}
+
+	46.56% {
+		top: 15px;
+		left: 10px;
+	}
+
+	49.89% {
+		left: -50px;
+	}
+
+	53.22% {
+		left: 10px;
+	}
+
+	56.55% {
+		left: -115px;
+	}
+
+	59.88% {
+		left: 10px;
+	}
+
+	63.21% {
+		left: -180px;
+	}
+
+	66.54% {
+		left: 10px;
+	}
+
+	69.87% {
+		left: -245px;
+	}
+
+	73.2% {
+		left: 10px;
+	}
+
+	76.53% {
+		left: -310px;
+	}
+
+	79.87% {
+		left: 10px;
+	}
+
+	83.2% {
+		left: -375px;
+	}
+
+	86.53% {
+		left: 10px;
+	}
+
+	89.86% {
+		left: -440px
+	}
+
+	93.19% {
+		left: 10px;
+		color: black;
+	}
+}
+
+.white-rook-r {
+	width: 0;
+	height: 0;
+	position: relative;
+	top: 15px;
+	left: 10px;
+	cursor: pointer;
+}
+
+.white-rook-r:hover {
+	animation: whiteRook-r 20s;
+}
+
+.white-rook-r::before {
+	content: 'I';
+	width: 0;
+	height: 0;
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+	position: relative;
+	top: -30px;
+	left: 10px;
+}
+
+.white-rook-r::after {
+	content: 'Ш';
+	color: white;
+	position: relative;
+	font-size: 30px;
+	font-weight: bold;
+	top: -55px;
+	left: -14px;
+}
+
+/*---------Left-Rook------------------------*/
+@keyframes whiteRook-l {
+	0% {
+		top: 15px;
+		left: 10px;
+		color: white;
+	}
+
+	3.33% {
+		top: -50px;
+	}
+
+	6.66% {
+		top: 15px;
+		left: 10px;
+	}
+
+	9.99% {
+		top: -115px;
+	}
+
+	13.32% {
+		top: 15px;
+		left: 10px;
+	}
+
+	16.65% {
+		top: -175px;
+	}
+
+	19.95% {
+		top: 15px;
+		left: 10px;
+	}
+
+	23.28% {
+		top: -235px;
+	}
+
+	26.61% {
+		top: 15px;
+		left: 10px;
+	}
+
+	29.94% {
+		top: -305px;
+	}
+
+	33.27% {
+		top: 15px;
+		left: 10px;
+	}
+
+	36.6% {
+		top: -365px;
+	}
+
+	39.9% {
+		top: 15px;
+		left: 10px;
+	}
+
+	43.23% {
+		top: -425px;
+	}
+
+	46.56% {
+		top: 15px;
+		left: 10px;
+	}
+
+	49.89% {
+		left: 75px;
+	}
+
+	53.22% {
+		left: 10px;
+	}
+
+	56.55% {
+		left: 135px;
+	}
+
+	59.88% {
+		left: 10px;
+	}
+
+	63.21% {
+		left: 195px;
+	}
+
+	66.54% {
+		left: 10px;
+	}
+
+	69.87% {
+		left: 265px;
+	}
+
+	73.2% {
+		left: 10px;
+	}
+
+	76.53% {
+		left: 335px;
+	}
+
+	79.87% {
+		left: 10px;
+	}
+
+	83.2% {
+		left: 400px;
+	}
+
+	86.53% {
+		left: 10px;
+	}
+
+	89.86% {
+		left: 470px
+	}
+
+	93.19% {
+		left: 10px;
+		color: black;
+	}
+}
+
+.white-rook-l {
+	width: 0;
+	height: 0;
+	position: relative;
+	top: 15px;
+	left: 10px;
+}
+
+.white-rook-l:hover {
+	animation: whiteRook-l 20s;
+}
+
+.white-rook-l::before {
+	content: 'I';
+	width: 0;
+	height: 0;
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+	position: relative;
+	top: -30px;
+	left: 10px;
+}
+
+.white-rook-l::after {
+	content: 'Ш';
+	color: white;
+	position: relative;
+	font-size: 30px;
+	font-weight: bold;
+	top: -55px;
+	left: -14px;
+}
+
+/* --------------------------Bp---------------------------------------- */
+@keyframes blackBp-l {
+	0% {
+		top: 20px;
+		left: 10px;
+	}
+
+	5% {
+		top: 85px;
+		left: -50px;
+	}
+
+	10% {
+		top: 20px;
+		left: 10px;
+	}
+
+	15% {
+		top: 150px;
+		left: -120px;
+	}
+
+	20% {
+		top: 20px;
+		left: 10px;
+	}
+
+	25% {
+		top: 85px;
+		left: 75px;
+	}
+
+	30% {
+		top: 20px;
+		left: 10px;
+	}
+
+	35% {
+		top: 145px;
+		left: 140px;
+	}
+
+	40% {
+		top: 20px;
+		left: 10px;
+	}
+
+	50% {
+		top: 210px;
+		left: 200px;
+	}
+
+	60% {
+		top: 20px;
+		left: 10px;
+	}
+
+	70% {
+		top: 275px;
+		left: 260px;
+	}
+
+	80% {
+		top: 20px;
+		left: 10px;
+	}
+
+	90% {
+		top: 340px;
+		left: 325px;
+	}
+
+	100% {
+		top: 20px;
+		left: 10px;
+	}
+}
+
+
+.bp-l {
+	width: 40px;
+	height: 15px;
+	background: black;
+	border-radius: 100px/50px;
+	position: relative;
+	top: 20px;
+	left: 10px;
+	cursor: pointer;
+}
+
+.bp-l:hover {
+	animation: blackBp-l 20s;
+}
+
+.bp-l::before {
+	content: ' ';
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 30px solid black;
+	position: relative;
+	top: -60px;
+	left: 5px;
+	border-radius: 15px;
+}
+
+.bp-l::after {
+	content: '♝';
+	font-size: 30px;
+	position: relative;
+	top: -47px;
+	left: -25px;
+
+}
+
+/*----White----*/
+@keyframes whiteBp-l {
+	0% {
+		top: 20px;
+		left: 10px;
+	}
+
+	5% {
+		top: -45px;
+		left: -50px;
+	}
+
+	10% {
+		top: 20px;
+		left: 10px;
+	}
+
+	15% {
+		top: -110px;
+		left: -120px;
+	}
+
+	20% {
+		top: 20px;
+		left: 10px;
+	}
+
+	30% {
+		top: -45px;
+		left: 75px;
+	}
+
+	40% {
+		top: 20px;
+		left: 10px;
+	}
+
+	50% {
+		top: -105px;
+		left: 140px;
+	}
+
+	55% {
+		top: 20px;
+		left: 10px;
+	}
+
+	60% {
+		top: -170px;
+		left: 200px;
+	}
+
+	70% {
+		top: 20px;
+		left: 10px;
+	}
+
+	75% {
+		top: -235px;
+		left: 260px;
+	}
+
+	80% {
+		top: 20px;
+		left: 10px;
+	}
+
+	90% {
+		top: -295px;
+		left: 330px;
+	}
+
+	100% {
+		top: 20px;
+		left: 10px;
+	}
+}
+
+.white-bp-l {
+	width: 40px;
+	height: 15px;
+	background: white;
+	border-radius: 100px/50px;
+	position: relative;
+	top: 20px;
+	left: 10px;
+	cursor: pointer;
+}
+
+.white-bp-l:hover {
+	animation: whiteBp-l 20s;
+}
+
+.white-bp-l::before {
+	content: ' ';
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 30px solid white;
+	position: relative;
+	top: -60px;
+	left: 5px;
+	border-radius: 15px;
+}
+
+.white-bp-l::after {
+	content: '♗';
+	font-size: 30px;
+	position: relative;
+	top: -47px;
+	left: -25px;
+	color: white;
+}
+
+/*-----------Right-BP---------*/
+@keyframes blackBp-r {
+	0% {
+		top: 20px;
+		left: 10px;
+	}
+
+	5% {
+		top: 85px;
+		left: 75px;
+	}
+
+	10% {
+		top: 20px;
+		left: 10px;
+	}
+
+	15% {
+		top: 150px;
+		left: 135px;
+	}
+
+	20% {
+		top: 20px;
+		left: 10px;
+	}
+
+	25% {
+		top: 85px;
+		left: -60px;
+	}
+
+	30% {
+		top: 20px;
+		left: 10px;
+	}
+
+	35% {
+		top: 145px;
+		left: -120px;
+	}
+
+	40% {
+		top: 20px;
+		left: 10px;
+	}
+
+	50% {
+		top: 210px;
+		left: -180px;
+	}
+
+	60% {
+		top: 20px;
+		left: 10px;
+	}
+
+	70% {
+		top: 275px;
+		left: -240px;
+	}
+
+	80% {
+		top: 20px;
+		left: 10px;
+	}
+
+	90% {
+		top: 340px;
+		left: -305px;
+	}
+
+	100% {
+		top: 20px;
+		left: 10px;
+	}
+
+}
+
+.bp-r {
+	width: 40px;
+	height: 15px;
+	background: black;
+	border-radius: 100px/50px;
+	position: relative;
+	top: 20px;
+	left: 10px;
+	cursor: pointer;
+}
+
+.bp-r:hover {
+	animation: blackBp-r 20s;
+}
+
+
+.bp-r::before {
+	content: ' ';
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 30px solid black;
+	position: relative;
+	top: -60px;
+	left: 5px;
+	border-radius: 15px;
+}
+
+.bp-r::after {
+	content: '♝';
+	font-size: 30px;
+	position: relative;
+	top: -47px;
+	left: -25px;
+
+}
+
+/*----WhiteBp-r----*/
+@keyframes whiteBp-r {
+	0% {
+		top: 20px;
+		left: 10px;
+	}
+
+	5% {
+		top: -45px;
+		left: 75px;
+	}
+
+	10% {
+		top: 20px;
+		left: 10px;
+	}
+
+	15% {
+		top: -100px;
+		left: 135px;
+	}
+
+	20% {
+		top: 20px;
+		left: 10px;
+	}
+
+	25% {
+		top: -45px;
+		left: -55px;
+	}
+
+	30% {
+		top: 20px;
+		left: 10px;
+	}
+
+	35% {
+		top: -105px;
+		left: -120px;
+	}
+
+	40% {
+		top: 20px;
+		left: 10px;
+	}
+
+	50% {
+		top: -170px;
+		left: -180px;
+	}
+
+	60% {
+		top: 20px;
+		left: 10px;
+	}
+
+	70% {
+		top: -230px;
+		left: -240px;
+	}
+
+	80% {
+		top: 20px;
+		left: 10px;
+	}
+
+	90% {
+		top: -290px;
+		left: -305px;
+	}
+
+	100% {
+		top: 20px;
+		left: 10px;
+	}
+
+}
+
+
+.white-bp-r {
+	width: 40px;
+	height: 15px;
+	background: white;
+	border-radius: 100px/50px;
+	position: relative;
+	top: 20px;
+	left: 10px;
+	cursor: pointer;
+}
+
+.white-bp-r:hover {
+	animation: whiteBp-r 20s;
+}
+
+.white-bp-r::before {
+	content: ' ';
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 30px solid white;
+	position: relative;
+	top: -60px;
+	left: 5px;
+	border-radius: 15px;
+}
+
+.white-bp-r::after {
+	content: '♗';
+	font-size: 30px;
+	position: relative;
+	top: -47px;
+	left: -25px;
+	color: white;
+}
