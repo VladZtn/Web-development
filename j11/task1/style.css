@@ -3,12 +3,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 500px;
+    height: 800px;
 }
 
 @font-face {
     font-family: digital; 
-    src: url(digitalinternetz.ttf); 
+    src: url(digital-7.ttf); 
 }
 
 .container{
@@ -23,7 +23,7 @@ body{
 
 .clock {
     color: yellow;
-    font-size: 60px;
+    font-size: 75px;
     letter-spacing: 7px;
     text-align: center;
     width: 550px;
