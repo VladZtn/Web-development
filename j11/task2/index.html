@@ -8,12 +8,14 @@
     <title>Document</title>
 </head>
 <body>
+<div class="main">
     <div class="start">
+        <h1 class="startText">Press the button to start play!</h1>
         <button type="button" class="btn" id="btn1">Start!</button>
     </div>
 
     <div class="timer__block">
-        <div class="timer"></div>
+        <div class="timer">00</div>
     </div>
 
     <h1 id="text">Click on me!</h1>
@@ -24,6 +26,10 @@
         <button id="output"></button>
     </div>
 
+    <div class="restart">
+        <button id="again" onclick="location.reload(); return false">Go play again!</button>
+    </div>
+</div>
     <script src="script.js"></script>
 </body>
 </html>
