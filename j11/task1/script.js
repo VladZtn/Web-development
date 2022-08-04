@@ -29,7 +29,7 @@ function showTime(){
 function showDate(){
     let today = new Date();
     let dd = today.getDate();
-    let mm = today.getMonth()+1; //January is 0!
+    let mm = today.getMonth()+1;
     let yyyy = today.getFullYear();
 
 today = '0' + mm + '/' + '0' + dd + '/' + yyyy;
