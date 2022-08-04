@@ -71,6 +71,7 @@
     text-align: center;
     color: white;
     background-color: orange;
+    border-radius: 10px;
     border: none;
     top: -333px; 
     cursor: pointer;
@@ -78,4 +79,9 @@
 
 #btn-circle:active{
     border: 5px solid black;
+}
+
+.outText{
+    position: absolute;
+    top: 150px;
 }
