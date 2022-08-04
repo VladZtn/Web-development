@@ -32,7 +32,7 @@ function showDate(){
     let mm = today.getMonth()+1;
     let yyyy = today.getFullYear();
 
-today = '0' + mm + '/' + '0' + dd + '/' + yyyy;
+today = '0' + dd + '/' + '0' + mm + '/' + yyyy;
 document.querySelector(".date").textContent = today;
 }
 
