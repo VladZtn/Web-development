@@ -1,4 +1,4 @@
-body{
+body {
     background-color: blueviolet;
     display: flex;
     align-items: center;
@@ -7,11 +7,34 @@ body{
 }
 
 @font-face {
-    font-family: digital; 
-    src: url(digital-7.ttf); 
+    font-family: digital;
+    src: url(digital-7.ttf);
 }
 
-.container{
+
+@keyframes clock {
+    0% {
+        opacity: 100%;
+    }
+
+    25% {
+        opacity: 25%;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+
+    75% {
+        opacity: 25%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,6 +45,7 @@ body{
 }
 
 .clock {
+    display: block;
     color: yellow;
     font-size: 75px;
     letter-spacing: 7px;
@@ -32,10 +56,11 @@ body{
     background-color: black;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    font-family: Digital, 'Comic Sans MS', cursive;   
+    font-family: Digital, 'Comic Sans MS', cursive;
+    animation: clock 3s infinite;
 }
 
-.date{
+.date {
     margin-top: 10px;
     font-size: 30px;
     color: white;
