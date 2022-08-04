@@ -27,10 +27,10 @@ function showTime(){
 }
 
 function showDate(){
-    var today = new Date();
-    var dd = today.getDate();
-    var mm = today.getMonth()+1; //January is 0!
-    var yyyy = today.getFullYear();
+    let today = new Date();
+    let dd = today.getDate();
+    let mm = today.getMonth()+1; //January is 0!
+    let yyyy = today.getFullYear();
 
 today = '0' + mm + '/' + '0' + dd + '/' + yyyy;
 document.querySelector(".date").textContent = today;
