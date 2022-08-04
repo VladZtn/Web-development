@@ -1,27 +1,37 @@
-let timeCounter = 31;
 let counter = 0;
+let timeElm = document.querySelector('.timer');
 let circleBlock = document.getElementById('btn-circle');
-const elem = document.querySelector('.timer');
-const timerId = setInterval(countdown, 1000);
-    
+const out = document.getElementById('output');
+const elem = document.querySelector('.timer'); 
+const text = document.getElementById('text');
 
 document.querySelector('.btn').onclick = function () {
     document.getElementById('btn1').hidden = true;
     document.getElementById('text').style.display = "block";
-    document.getElementById('btn-circle').style.display = "block";
-    document.getElementById('btn-circle').onclick = clicks;
+    circleBlock.style.display = "block";
+    circleBlock.onclick = clicks;
     document.getElementById('output').onclick = clicks;
-}
-
-function countdown() {
-    while(timeCounter != 0){
-        timeCounter--;
-        document.querySelector('.timer').innerText = timeCounter;
-    }clearInterval(timerId);
-       
 }
 
 function clicks(){
     counter++;
     document.getElementById('output').innerText = counter;
 }
+
+function Clear(){
+    circleBlock.style.display = 'none';
+    text.style.display = 'none';
+    out.disabled = true;
+    let outText = 'You`r result:';
+    document.querySelector('.outText').innerText = outText;
+}
+
+function timer(x) {
+    if(x === -1) {
+        Clear()
+        return;
+    }
+    timeElm.innerHTML = x;
+    return setTimeout(() => {timer(--x)}, 1000)
+}
+timer(30)
