@@ -1,0 +1,96 @@
+body{
+  margin: 10;
+  padding: 10;
+}
+
+main__block{
+  display: flex;
+  flex-direction: column;
+  margin-top: 75px;
+}
+
+.grid-container-numbers {
+  display: grid;
+  position: relative;
+  grid-template-columns: 120px 120px 120px 120px;
+  background-color: rgb(84, 82, 82);
+  width: 480px;
+  padding: 10px;
+  top: -20px;
+}
+
+.grid-container-counter{
+  display: grid;
+  background-color: rgb(84, 82, 82);
+  width: 480px;
+  padding: 10px;
+}
+
+.counter{
+  position: relative;
+  top: 35px;
+  margin-top: 10px;
+  margin-left: 425px;
+  margin-bottom: 10px;
+  font-size: 50px;
+  color: white;
+  height: 100px;
+  width: 600px;
+}
+
+.grid-item {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgb(84, 82, 82);
+  color: white;
+  height: 65px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.grid-item-top{
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgb(84, 82, 82);
+  color: rgba(255, 255, 255, 0.75);
+  height: 65px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.grid-item:active{
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.right-panel:active{
+  background-color: rgba(0, 0, 0, 0.25);
+  color: white;
+}
+
+.grid-item-top:active{
+  background-color: rgba(0, 0, 0, 0.25);
+  color: white;
+}
+
+#small{
+  position: relative;
+  font-size: 20px;
+  top: -5px;
+}
+
+.right-panel{
+  background-color: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgb(84, 82, 82);
+  color: rgba(255, 255, 255, 0.75);
+  height: 65px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.equally{
+  background-color: burlywood;
+}
