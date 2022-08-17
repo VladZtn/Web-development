@@ -9,6 +9,7 @@ const startBlock = document.querySelector('.start__block');
 const playBlock = document.querySelector('.play__block');
 const chooseBlock = document.querySelector('.choose__block');
 const container = document.querySelectorAll(':is(.parent) img');
+const backToMain = document.querySelector('.back-to-main');
 
 
 
@@ -34,4 +35,12 @@ exit.onclick = function () {
 back.onclick = function () {
     startBlock.style.display = 'flex';
     playBlock.style.display = 'none';
+}
+
+backToMain.onclick = function () {
+    startBlock.style.display = 'flex';
+    chooseBlock.style.display = 'none';
+    for (const element of container) {
+        element.style.display = 'none';
+    }
 }
