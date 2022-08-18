@@ -55,7 +55,7 @@ let Functions = {
     four: dinoFour.onclick = function () {
         for (const element of container)
             element.style.display = 'none';
-        dinoFoure.style.display = 'block';
+        dinoFour.style.display = 'block';
         dinoFour.style.animation = 'pulsing 2s infinite';
     },
 
@@ -63,7 +63,7 @@ let Functions = {
         for (const element of container)
             element.style.display = 'none';
         dinoFive.style.display = 'block';
-        dinoFivee.style.animation = 'pulsing 2s infinite';
+        dinoFive.style.animation = 'pulsing 2s infinite';
     },
 
     six: dinoSix.onclick = function () {
