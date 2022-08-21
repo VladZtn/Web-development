@@ -1,0 +1,38 @@
+.main__block{
+    display: grid;
+    grid-template-columns: 25% 50% 25%; 
+    grid-template-rows: 100vh; 
+
+}
+
+.center{
+    display: grid;
+    grid-template-columns: 100%; 
+    grid-template-rows: 50px 100vh;
+}
+
+.center-content{
+    display: grid;
+    grid-template-columns: 50% 50%; 
+    grid-template-rows: 94.7vh;
+}
+
+.left-content{
+    background-color: blue;
+}
+
+.right-content{
+    background-color: blueviolet;
+}
+
+.header{
+    background-color: pink;
+}
+
+.left-center-content{
+    background-color: yellow;
+}
+
+.right-center-content{
+    background-color: orange;
+}
