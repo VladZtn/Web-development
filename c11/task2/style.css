@@ -1,0 +1,32 @@
+.main{
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.left_block {  
+    display: grid;
+    grid-template-columns: 10% 800px 225px;
+    grid-template-rows: 450px 100px;
+}
+  
+.right_block {  
+    display: grid;
+    grid-template-columns: 225px;
+    grid-template-rows: 200px 250px;
+}
+
+.menu{
+    background-color: pink;
+}
+
+.main-content{
+    background-color: bisque;
+}
+
+.right-menu{
+    background-color: blue;
+}
+
+.right-content{
+    background-color: orange;
+}
