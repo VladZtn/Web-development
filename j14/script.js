@@ -10,10 +10,10 @@ const numbers = ['0','1','2','3','4','5','6','7','8','9','.'];
 const act = ['-','+','X','/','%'];
 
 ac.onclick = function Clear(){
-    let a = '';
-    let b = '';
-    let sign = '';
-    let finish = 'false';
+    a = '';
+    b = '';
+    sign = '';
+    finish = 'false';
     output.textContent = '0';
 };
 
