@@ -23,23 +23,75 @@
             <div class="weather-status">
                 <div class="temp" id="temp">34&deg;C</div>
                 <div class="min-max" id="min-max">32&deg;C (min) / 34&deg;C (max)</div>
-                <div class="weather" id="weather">Clear</div>
-                <div id="img"></div>
+                <div class="weather" id="weather"></div>
+                <div class="img"><img src="/images/icons/cloud.png" id="img" width="75" height="75"></div>
                 <div class="likeAs" id="like-as">Feels like</div>
-            </div>
             
-            <div class="weather-info__block">
-                <div class="humidity">
-                    <p>Humidity:</p>
-                    <img src="./images/icons/humidity.png" height="50" width="50">
-                    <p id="humidity-text"></p>
-                </div>
-                <div class="gauge">
-                    <p>Gauge:</p>
-                    <img src="./images/icons/gauge.png" height="50" width="50">
-                    <p id="gauge-text"></p>
+                <div class="weather-info__block">
+                    <div class="humidity">
+                        <p>Humidity:</p>
+                        <img src="./images/icons/humidity.png" height="50" width="50">
+                        <p id="humidity-text"></p>
+                    </div>
+                    <div class="gauge">
+                        <p>Gauge:</p>
+                        <img src="./images/icons/gauge.png" height="50" width="50">
+                        <p id="gauge-text"></p>
+                    </div>
+                    <div class="clouds">
+                        <p>Cloud percent:</p>
+                        <img src="/images/cloud.png" width="50" height="50">
+                        <p id="clouds-text"></p>
+                    </div>
+                    <div class="wind">
+                        <p>Wind speed:</p>
+                        <img src="/images/icons/wind.png" width="50" height="50">
+                        <p id="wind-speed"></p>
+                    </div>
                 </div>
             </div>
+
+            <div class="future-forecast">
+                <div class="today" id="current-temp">
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                    <div class="other" id="mnd">
+                        <div class="day">Monday</div>
+                        <div class="temp">Night - 25.6&#176; C</div>
+                        <div class="temp">Day - 35.6&#176; C</div>
+                    </div>
+                </div>
+        
+                <div class="weather-forecast" id="weather-forecast">
+                    <div class="weather-forecast-item">
+                        <div class="day">Tue</div>
+                        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                        <div class="temp">Night - 25.6&#176; C</div>
+                        <div class="temp">Day - 35.6&#176; C</div>
+                    </div>
+                    <div class="weather-forecast-item">
+                        <div class="day">Wed</div>
+                        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                        <div class="temp">Night - 25.6&#176; C</div>
+                        <div class="temp">Day - 35.6&#176; C</div>
+                    </div>
+                    <div class="weather-forecast-item">
+                        <div class="day">Thur</div>
+                        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                        <div class="temp">Night - 25.6&#176; C</div>
+                        <div class="temp">Day - 35.6&#176; C</div>
+                    </div>
+                    <div class="weather-forecast-item">
+                        <div class="day">Fri</div>
+                        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                        <div class="temp">Night - 25.6&#176; C</div>
+                        <div class="temp">Day - 35.6&#176; C</div>
+                    </div>
+                    <div class="weather-forecast-item">
+                        <div class="day">Sat</div>
+                        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                        <div class="temp">Night - 25.6&#176; C</div>
+                        <div class="temp">Day - 35.6&#176; C</div>
+                    </div>
         </div>
     </div>
 
