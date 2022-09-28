@@ -1,220 +1,97 @@
-@media screen and (min-width: 300px) {
-    .weather-body {
-        display: block;
-        color: #582233;
-        padding: 20px;
-        line-height: 2rem;
-        border-radius: 10px;
-        background-color: rgba(255, 255, 255, 0.6);
-        min-height: 550px;
+const timeBlock = document.getElementById('time');
+const weatherApi = {
+    key: "7dfdb8570e6b8a33cd86a34d90d68ade",
+    baseUrl: "https://api.openweathermap.org/data/2.5/weather",
+};
+
+const searchInputBox = document.getElementById('input-box');
+searchInputBox.addEventListener('keypress', (event) => {
+    if (event.keyCode == 13) {
+        console.log(searchInputBox.value);
+        getWeatherReport(searchInputBox.value);
+        document.querySelector('.weather-body').style.display = "block";
+    };
+
+});
+
+function getWeatherReport(city) {
+    fetch(`${weatherApi.baseUrl}?q=${city}&appid=${weatherApi.key}&units=metric`)
+        .then(weather => {
+            return weather.json();
+        }).then(showWeatherReport);
+};
+
+function showWeatherReport(weather) {
+    console.log(weather);
+
+    let city = document.getElementById('city');
+    city.innerText = `${weather.name}, ${weather.sys.country}`;
+
+    let temperature = document.getElementById('temp');
+    temperature.innerHTML = `${Math.round(weather.main.temp)}&deg;C`;
+
+    let minMaxTemp = document.getElementById('min-max');
+    minMaxTemp.innerHTML = `${Math.floor(weather.main.temp_min)}&deg;C (min) / ${Math.ceil(weather.main.temp_max)}&deg;C (max) `;
+
+    let weatherType = document.getElementById('clouds-text');
+    weatherType.innerText = `${weather.clouds.all}%`;
+
+    let windSpeed = document.getElementById('wind-speed');
+    windSpeed.innerText = `${weather.wind.speed}m/s`;
+
+    let likeAs = document.getElementById('like-as');
+    likeAs.innerText = `Feels like: ${weather.main.feels_like}°C`;
+
+    let humidity = document.getElementById('humidity-text');
+    humidity.innerText = `${weather.main.humidity}%`;
+
+    let gauge = document.getElementById('gauge-text');
+    gauge.innerText = `${weather.main.pressure}Pa`;
+
+    let date = document.getElementById('date');
+    let todayDate = new Date();
+    date.innerText = dateManage(todayDate);
+
+    // let imgBlock = document.getElementById('img');
+
+    if (weatherType.textContent == 'Clear') {
+        document.body.style.backgroundImage = "url('images/clear.jpg')";
+        // temperature.innerHTML = "<img src='/images/clear.png' height='50' width='50'>";
+
+    } else if (weatherType.textContent == 'Clouds') {
+        document.body.style.backgroundImage = "url('images/cloud.jpg')";
+        // imgBlock.innerHTML = "<img src='/images/cloud.png' height='50' width='50'>";
+    
+    }else if (weatherType.textContent == 'Haze') {
+        document.body.style.backgroundImage = "url('images/cloud.jpg')";
+        // imgBlock.innerHTML = "<img src='/images/haze.png' height='50' width='50'>";
+
+    } else if (weatherType.textContent == 'Rain') {
+        document.body.style.backgroundImage = "url('images/rain.jpg')";
+        // imgBlock.innerHTML = "<img src='/images/rainy.png' height='50' width='50'>";
+
+    } else if (weatherType.textContent == 'Snow') {
+        document.body.style.backgroundImage = "url('images/snow.jpg')";
+        // imgBlock.innerHTML = "<img src='/images/snow.png' height='50' width='50'>";
+
+    } else if (weatherType.textContent == 'Thunderstorm') {
+        document.body.style.backgroundImage = "url('images/thunderstorm.jpg')";
+        // imgBlock.innerHTML = "<img src='/images/storm.png' height='50' width='50'>";
     }
-}
+};
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+// const now = new Date();
+// let hour = now.getHours(); 
+// let minutes = now.getMinutes();
+// timeBlock.innerText = `${hour}:${minutes}`;
+    
 
-body {
-    background-image: url('images/sunny.jpg');
-    height: 100%;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-position: top center;
-    font-family: Arial, Helvetica, sans-serif;
-    background-size: cover;
-}
-
-.app-main {
-    width: 1200px;
-    margin: 100px auto;
-    background-color: rgba(240, 248, 255, 0.6);
-    padding: 10px;
-    text-align: center;
-    margin-left: 150px;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-
-.app-main>* {
-    margin-bottom: 20px;
-}
-
-.input-box {
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.6);
-    border: none;
-    outline: none;
-    color: #582233;
-    font-size: 1.2rem;
-    height: 50px;
-    border-radius: 5px;
-    padding: 0 10px;
-    text-align: center;
-}
-
-.input-box:focus {
-    background-color: rgba(255, 255, 255);
-}
-
-.weather-info__block {
-    display: flex;
-    position: relative;
-    justify-content: end;
-    margin-left: 115px;
-    top: 50px;
-    gap: 50px;
-    height: 200px;
-}
-
-.weather-body {
-    display: none;
-    color: #582233;
-    padding: 20px;
-    line-height: 2rem;
-    margin-right: 120px;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.6);
-    height: 35vh;
-    width: 1182px;
-}
-
-.location-details {
-    display: flex;
-    font-weight: bold;
-}
-
-.location-details>.city {
-    position: relative;
-    font-size: 20px;
-    left: 45px;
-    top: 10px;
-}
-
-.location-details>.date {
-    position: relative;
-    left: 790px;
-    top: 10px;
-}
-
-.temp {
-    font-size: 50pt;
-    font-weight: 700;
-    margin: 20px 0;
-    text-shadow: 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.min-max, .weather {
-    font-size: 12pt;
-    font-weight: 600;
-}
-
-.weather-status {
-    display: flex;
-    left: 0px;
-    height: 200px;
-}
-
-.weather-status>.temp {
-    position: relative;
-    top: 20px;
-    left: 115px;
-}
-
-.weather-status>.img>#img {
-    position: relative;
-    top: 20px;
-    left: -315px;
-}
-
-.weather-status>.min-max {
-    position: relative;
-    top: 100px;
-    left: -110px;
-    font-size: 18px;
-}
-
-.weather-status>.likeAs {
-    position: relative;
-    top: 150px;
-    left: -380px;
-    font-weight: 600;
-}
-
-.weather-status>.weather {
-    position: relative;
-    top: 150px;
-    left: -125px;
-}
-
-.future-forecast {
-    background: rgba(24, 24, 27, 0.3);
-    border-radius: 20px;
-    padding: 25px;
-    position: relative;
-    bottom: 0;
-    top: -10px;
-    display: flex;
-    color: #fff;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    overflow-y: hidden;
-}
-
-.weather-forecast-item{
-    height: 250px;
-}
-
-.future-forecast .today {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #eee;
-    border-radius: 10px;
-    padding: 15px;
-    padding-right: 40px;
-    border-radius: 10px;
-    background: rgba(0, 0, 0, 0.2)
-}
-
-.future-forecast .today .day {
-    padding: 5px 15px;
-    background: #3c3c44;
-    border-radius: 50px;
-    text-align: center;
-}
-
-.future-forecast .today .temp {
-    font-size: 18px;
-    padding-top: 15px;
-}
-
-.future-forecast .weather-forecast {
-    display: flex;
-}
-
-.weather-forecast .weather-forecast-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 10px;
-    border: 1px solid #eee;
-    padding: 15px;
-    border-radius: 10px;
-    background: rgba(0, 0, 0, 0.2)
-}
-
-.weather-forecast .weather-forecast-item .day {
-    padding: 5px 15px;
-    background: #3C3C44;
-    border-radius: 50px;
-    text-align: center;
-}
-
-.weather-forecast .weather-forecast-item .temp {
-    font-weight: 100;
-    font-size: 12px;
+function dateManage(dateArg) {
+    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    let year = dateArg.getFullYear();
+    let month = months[dateArg.getMonth()];
+    let date = dateArg.getDate();
+    let day = days[dateArg.getDay()];
+    return `${date} ${month} (${day}), ${year}`;
 }
