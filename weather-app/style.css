@@ -1,0 +1,220 @@
+@media screen and (min-width: 300px) {
+    .weather-body {
+        display: block;
+        color: #582233;
+        padding: 20px;
+        line-height: 2rem;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.6);
+        min-height: 550px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('images/sunny.jpg');
+    height: 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: top center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+}
+
+.app-main {
+    width: 1200px;
+    margin: 100px auto;
+    background-color: rgba(240, 248, 255, 0.6);
+    padding: 10px;
+    text-align: center;
+    margin-left: 150px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.app-main>* {
+    margin-bottom: 20px;
+}
+
+.input-box {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: none;
+    outline: none;
+    color: #582233;
+    font-size: 1.2rem;
+    height: 50px;
+    border-radius: 5px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.input-box:focus {
+    background-color: rgba(255, 255, 255);
+}
+
+.weather-info__block {
+    display: flex;
+    position: relative;
+    justify-content: end;
+    margin-left: 115px;
+    top: 50px;
+    gap: 50px;
+    height: 200px;
+}
+
+.weather-body {
+    display: none;
+    color: #582233;
+    padding: 20px;
+    line-height: 2rem;
+    margin-right: 120px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 35vh;
+    width: 1182px;
+}
+
+.location-details {
+    display: flex;
+    font-weight: bold;
+}
+
+.location-details>.city {
+    position: relative;
+    font-size: 20px;
+    left: 45px;
+    top: 10px;
+}
+
+.location-details>.date {
+    position: relative;
+    left: 790px;
+    top: 10px;
+}
+
+.temp {
+    font-size: 50pt;
+    font-weight: 700;
+    margin: 20px 0;
+    text-shadow: 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.min-max, .weather {
+    font-size: 12pt;
+    font-weight: 600;
+}
+
+.weather-status {
+    display: flex;
+    left: 0px;
+    height: 200px;
+}
+
+.weather-status>.temp {
+    position: relative;
+    top: 20px;
+    left: 115px;
+}
+
+.weather-status>.img>#img {
+    position: relative;
+    top: 20px;
+    left: -315px;
+}
+
+.weather-status>.min-max {
+    position: relative;
+    top: 100px;
+    left: -110px;
+    font-size: 18px;
+}
+
+.weather-status>.likeAs {
+    position: relative;
+    top: 150px;
+    left: -380px;
+    font-weight: 600;
+}
+
+.weather-status>.weather {
+    position: relative;
+    top: 150px;
+    left: -125px;
+}
+
+.future-forecast {
+    background: rgba(24, 24, 27, 0.3);
+    border-radius: 20px;
+    padding: 25px;
+    position: relative;
+    bottom: 0;
+    top: -10px;
+    display: flex;
+    color: #fff;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+.weather-forecast-item{
+    height: 250px;
+}
+
+.future-forecast .today {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 15px;
+    padding-right: 40px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2)
+}
+
+.future-forecast .today .day {
+    padding: 5px 15px;
+    background: #3c3c44;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.future-forecast .today .temp {
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+.future-forecast .weather-forecast {
+    display: flex;
+}
+
+.weather-forecast .weather-forecast-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2)
+}
+
+.weather-forecast .weather-forecast-item .day {
+    padding: 5px 15px;
+    background: #3C3C44;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.weather-forecast .weather-forecast-item .temp {
+    font-weight: 100;
+    font-size: 12px;
+}
