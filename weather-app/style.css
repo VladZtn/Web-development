@@ -24,6 +24,8 @@ body {
     background-position: top center;
     font-family: Arial, Helvetica, sans-serif;
     background-size: cover;
+    display: flex;
+    justify-content: center;
 }
 
 .app-main {
@@ -32,7 +34,6 @@ body {
     background-color: rgba(240, 248, 255, 0.6);
     padding: 10px;
     text-align: center;
-    margin-left: 150px;
     margin-top: 20px;
     border-radius: 10px;
 }
@@ -62,9 +63,9 @@ body {
     display: flex;
     position: relative;
     justify-content: end;
-    margin-left: 115px;
-    top: 50px;
-    gap: 50px;
+    margin-left: 175px;
+    top: 35px;
+    gap: 25px;
     height: 200px;
 }
 
@@ -181,7 +182,7 @@ body {
 
 .future-forecast .today .day {
     padding: 5px 15px;
-    background: #3c3c44;
+    background: #582233;
     border-radius: 50px;
     text-align: center;
 }
@@ -209,7 +210,7 @@ body {
 
 .weather-forecast .weather-forecast-item .day {
     padding: 5px 15px;
-    background: #3C3C44;
+    background: #582233;
     border-radius: 50px;
     text-align: center;
 }
