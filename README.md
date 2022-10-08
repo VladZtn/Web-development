@@ -19,4 +19,5 @@ j9 - https://vladztn.github.io/homework/j9/ \
 j10 - https://vladztn.github.io/homework/j10/ \
 j11 - https://vladztn.github.io/homework/j11/task1/ \
 j12 - https://vladztn.github.io/homework/j12/ \
-j14 - https://vladztn.github.io/homework/j14/
+j14 - https://vladztn.github.io/homework/j14/ \
+j18 - https://vladztn.github.io/homeword/j18/ 
